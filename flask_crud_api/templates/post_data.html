@@ -1,0 +1,19 @@
+{% extends 'index.html'%}
+
+{% block title %}
+   <title>PostData</title>
+{% endblock %}
+
+{% block content %}
+   <form action = "/post_data" method = "post">
+         <table>
+        <tr><td>Name</td>
+        <td><input type ="text" name ="uname"></td></tr>
+        <tr><td>Password</td>
+        <td><input type ="password" name ="pass"></td></tr>
+        <tr><td><input type = "submit"></td></tr>
+    </table>
+      </form>
+{% endblock %}
+
+

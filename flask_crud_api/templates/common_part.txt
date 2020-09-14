@@ -1,0 +1,12 @@
+{% extends 'index.html'%}
+
+{% block title %}
+   <title>  </title>
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+
+for static file: src = "{{ url_for('static', filename = '') }}"

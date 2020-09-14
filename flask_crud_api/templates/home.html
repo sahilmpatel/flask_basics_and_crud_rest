@@ -1,0 +1,17 @@
+{% extends 'index.html'%}
+
+{% block title %}
+   <title> Home  </title>
+{% endblock %}
+
+{% block content %}
+    {% with messages = get_flashed_messages() %}
+         {% if messages %}
+               {% for message in messages %}
+                    <p>{{ message }}</p>
+               {% endfor %}
+         {% endif %}
+      {% endwith %}
+
+     <p> Welcome, {{ name }} </p>
+{% endblock %}
